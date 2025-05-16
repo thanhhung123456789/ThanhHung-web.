@@ -1,0 +1,459 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@import url("all.css"); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body /* định dạng cho nguyên 1 trang*/
+{
+	background-color: white; /* màu nền cho trang web*/
+	color: #141111; /* màu chữ*/ 
+	font-family:"Montserrat" Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;
+	font-size: 16px;
+	margin: 0    /* bỏ đẩy lề của trang web*/
+}
+
+
+h1{ 
+		font-size: 45px;
+	    color:#000000;
+	    font-family: "PT Serif", serif;
+	}
+h2{ font-size: 40px; text-shadow:1px 1px 5px rgba(255,255,0,0.8)}
+h3{ font-size: 36px}
+h4{ font-size: 24px}
+h5{ font-size: 20px}
+h6{ font-size: 18px}
+h7{ font-size: 20px}
+h8{ font-size: 16px}
+h9{ font-size: 19px}
+h10{ font-size: 15px}
+h2,h3,h4,h5,h6, a,button,p{; margin-bottom: 0; margin-top: 0;
+font-family: "Montserrat"}
+
+h10{
+	 color:#8E8E8E
+	
+	
+}
+h9{
+	 color:white
+	
+	
+}
+a{ 
+	color:black;
+	text-decoration:none;
+	font-weight:500
+}
+
+a:hover /* khi đưa chuột và chữ có thẻ a - liên kết trang web nào đó*/
+{
+	color: #262323;
+}
+/*@font-face
+{
+	font-family: f-tron;
+	src: url("../fonts/Coolvetica Rg.otf")
+}
+.aimuonf-tron
+{
+	font-family: f-tron;
+	
+}*/
+/*----------------------- layout bo cuc web----small----------*/
+.container-fluid
+{
+	width: 100%; 
+	padding-left: 16px;
+	padding-right: 16px
+}
+/*------------- mobile first-----------------*/
+.container
+{
+	width:95%;
+	margin: auto
+}
+
+/*--------------size container cho tablet (ipad)-medium--------------*/
+@media (min-width:600px)
+{
+	.container
+	{
+		width:90%; margin: auto
+	}
+	
+}
+/*--------------size container cho pc 1000----large-----------*/
+@media (min-width:1000px)
+{
+	.container
+	{
+		width:80%; margin: auto
+	}
+}
+/*---------- chia he thong grid 12 column*/
+.col-1{ width: 8.3333%; }
+.col-2{ width:16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width:41.66%}
+.col-6{ width: 50%}
+.col-7{ width:58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid blue*/
+}
+*{ box-sizing: border-box}
+.img-100{width: 100%}
+.row 
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.card
+{ 
+	background:#ECECEA;
+	border-radius:5px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px
+}
+
+footer
+{
+	background:#0A0707;
+}
+/*---- style he thong mau chữ cho web---*/
+.text-primary { color: #92B9AD} /* mau chử chính (lam nhan ý chính */
+.text-secondary { color: #A6D5E5} /* mau chử phụ (lam nhan ý phụ trong thiet ke */
+.text-warning{color:#E4974B }
+.text-light{ color:#dddddd}
+.text-dark{color:White}
+.text-giacu{
+	color:#b9b9b9;
+	text-decoration: line-through
+	
+}
+/*---- style he thong mau nền background cho web---*/
+.bg-primary { background-color:#92B9AD }
+.bg-secondary { background-color:#A6D5E5 }
+.bg-hongcam{ background-color:#F2AAAC}
+.bg-light{background-color:#8CF4DE}
+.bg-dark {background-color:White}
+
+
+/*--- style he thong mau cho nút button---*/
+.btn-primary
+{ 
+	background-color: black;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-primary:hover{
+	background-color:#FAF6F6;
+	color:black;
+}
+
+.btn-secondary
+{ 
+	background-color: #05916F;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-secondary:hover{
+	background-color:deeppink;
+	color: white
+}
+
+.btn-outline-primary
+{
+	border: 1px deeppink inset;
+	color: deeppink;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-primary:hover
+{
+	background-color:deeppink;
+	color: white
+}
+.btn-outline-secondary
+{
+	border: 1px #05916F solid;
+	color: #05916F;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-secondary:hover
+{
+	background-color:#05916F;
+	color: white
+}
+/*--- style cho menu can ban chi dung duoc tai pc---*/
+ul.menu
+{
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content:flex-start
+}
+ul.menu li a
+{
+	padding: 8px 16px;	/*background-color: deeppink;*/
+	color: #333;
+	color: #666666; letter-spacing: 0.08rem;
+	margin: 2px;
+	display: block
+}
+ul.menu li a:hover
+{
+	background-color:deeppink;
+	border-bottom: 2px solid #666;
+	color: pink
+}
+ul.menu li
+{
+	position: relative
+}
+ul.menu .dropdown-menu
+{
+	width: 200px;
+	position: absolute; 
+	left: 0;
+	top: 150%;
+	z-index: 9999;
+	background: #eee;
+	opacity: 0;
+	transition: all 1s;
+	/*transform: scaleY(0);
+	transform-origin: top center;*/
+	}
+ul.menu li:hover >.dropdown-menu
+{
+	/*transform: scaleY(1);*/
+	left: 0;
+	top: 85%;
+	opacity: 1
+}
+
+ul.menu .dropdown-menu a
+{
+	display: block /* mỗi a trong dropdown menu sẽ chiếm 1 hàng*/
+}
+
+
+
+.banner{
+	position: relative
+}
+.banner-caption { 
+	 padding: 80px; 
+	width: 40%;
+	/*border: 2px solid blue;*/
+	position: absolute;
+	right: 10%; top: 20%
+}
+ #hero
+{
+	
+		
+}
+
+.text-center{text-align: center }
+.text-right{ text-align: right}
+.text-justify{ text-align: justify}
+.border-bottom { border-bottom:1px solid #666}
+/*-- các cột nếu cần flex thì goi d-flex*/
+.d-flex{ display: flex}
+/* canh đẩy chiều dọc cho các box trong flex*/
+.align-items-center { align-items: center}
+.align-items-end { align-items: flex-end}
+/* canh đẩy chiều ngang cho các box trong flex*/
+.justify-center{ justify-content: center}
+.justify-between{ justify-content:space-between} /* chia đều k cach các item */
+.justify-end{ justify-content: flex-end}
+.justify-start{ justify-content: flex-start}
+.navbar
+{
+  display:flex;
+	justify-content: space-between;
+	aligalign-items: center;
+	  
+}
+.logo{
+	font-size:30px
+}
+
+.navbar .logor{ font-size: 2rem }
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	
+}
+ .navbar ul li { position: relative}
+ .navbar ul li a
+{
+	padding:10px 20px;
+	font-weight: 600;
+}
+ .navbar ul li a:hover{
+	 boder-bottom: 2px solid black;
+	 color: #2AAA78
+}
+/*-- style hệ thống spacing khoảng cách*/
+.my-100{ 
+ margin-top: 100px;
+ margin-bottom: 100px;
+
+
+}
+
+.my-50{ 
+ margin-top: 50px;
+ margin-bottom: 50px;
+ 
+}
+.mx-auto{magin-left:auto; margin-right:auto}
+.ml-auto{ margin-left: auto}
+.mr-auto{ margin-right: auto}
+.p-0{padding:0}
+.P-10{padding:10px}
+.py-100
+{
+	padding-top:100px;
+	padding-bottom:100px;
+	
+}
+
+#danh-muc .anh-dm
+{position: relative; overflow:hidden}
+#danh-muc .caption
+{
+position:absolute;	
+left:0;
+top:45%;	
+width:100%;	
+display:flex;
+justify-content:center; 
+
+
+}
+#danh-muc .caption p{background: white; padding: 10px}
+#danh-muc img {transition:all 1s }
+#danh-muc .anh-dm:hover >img{ transform:scale(1.1)}
+
+
+#New-collection .card
+{
+position: relative; overflow: hidden	
+	
+}
+ 
+#New-collection .left-box{
+ position:absolute; left:10px; top: 10px;
+	background:#000; color:#fff;
+	padding: 5px 15px;
+	font-size: 14px;
+		
+/*border:1px solid #d00*/		
+}
+#New-collection .right-box
+
+{
+	position:absolute; right :-50px; top: 10px;
+	transition: all 1s;
+	
+	
+}
+#New-collection .card:hover>.right-box{ right:10px}
+#New-collection .right-box a{
+	display:block;
+	border: 1px solid #333;
+	border-radius:50%;
+	padding: 10px;
+	margin: 5px;
+}
+
+.d-none{display: none}
+#cam-nhan .content{;position: relative; padding-top:50px; text-align: center }
+#cam-nhan .avatar{position:absolute; border-radius: 50%;
+       left:40%; top:-50px; padding: 5px; background:white;
+    box-shadow: 0 0 5px rgba(0,0,0,0,4)
+}
+ 
+#New-collectionn .card
+{
+position: relative; overflow: hidden	
+	
+}
+ 
+#New-collectionn .left-box{
+ position:absolute; left:10px; top: 10px;
+	background:#000; color:#fff;
+	padding: 5px 15px;
+	font-size: 14px;
+		
+/*border:1px solid #d00*/		
+}
+#New-collectionn .right-box
+
+{
+	position:absolute; right :-50px; top: 10px;
+	transition: all 1s;
+	
+	
+}
+#New-collectionn .card:hover>.right-box{ right:10px}
+#New-collectionn .right-box a{
+	display:block;
+	border: 1px solid #333;
+	border-radius:50%;
+	padding: 10px;
+	margin: 5px;
+}
+#danh-mucc .anh-dm
+{position: relative; overflow:hidden}
+#danh-mucc .caption
+{
+position:absolute;	
+left:0;
+top:45%;	
+width:100%;	
+display:flex;
+justify-content:center; 
+
+
+}
+#danh-mucc .caption p{background: white; padding: 10px}
+#danh-mucc img {transition:all 1s }
+#danh-mucc .anh-dm:hover >img{ transform:scale(1.1)}
+
+.bannerr{
+	position: relative
+}
+.bannerr-caption { 
+	 padding: 60px; 
+	width: 40%;
+	/*border: 2px solid blue;*/
+	position: absolute;
+	 top: 15%}
